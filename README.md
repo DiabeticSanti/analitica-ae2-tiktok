@@ -16,6 +16,6 @@ AE2/
 
 Este repositorio contiene la entrega de la **Actividad Evaluativa 2 (AE2)** para la asignatura de Analítica de Datos. El proyecto aborda la necesidad de comprender las dinámicas de publicación y métricas en contenido corto mediante el análisis descriptivo de una muestra representativa del dataset masivo `datasocial/tiktok-5.6B-videos` alojado en Hugging Face.
 
-## 👥 Autores
+## Autores
 * **Santiago Ramírez Vásquez**
 * **Santiago Jiménez Otálvaro**

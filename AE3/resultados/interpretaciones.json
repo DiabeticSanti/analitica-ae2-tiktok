@@ -1,0 +1,52 @@
+{
+  "P1": {
+    "titulo": "Distribución general de vistas e interacción",
+    "texto": "La mediana de vistas por publicación es 41, mientras que la media es 1.771 (43,2 veces la mediana); el 1 % de publicaciones con más vistas (2.000) concentra el 92,4 % del total. Las publicaciones con un millón de vistas o más son el 0,03 % y reúnen el 25,63 % de las vistas. La tasa de interacción mediana es 18,87 % (rango intercuartil de 10,00 % a 35,00 %).",
+    "hallazgos": [
+      "La mediana de vistas por publicación es 41, mientras que la media es 1.771 (43,2 veces la mediana); el 1 % de publicaciones con más vistas (2.000) concentra el 92,4 % del total."
+    ],
+    "limitacion": "Describe solo la muestra analizada; la distribución muy asimétrica hace que la media no represente a una publicación típica."
+  },
+  "P2": {
+    "titulo": "Según el tipo de publicación",
+    "texto": "El grupo más numeroso es «video», con 80,23 % de las publicaciones y 95,51 % de las vistas. En la mediana de vistas, el valor más alto corresponde a «video» (42) y el más bajo a «photo» (39), es decir, 1,1 veces el del grupo más bajo. En la tasa de interacción mediana, el valor más alto corresponde a «photo» (19,05 %) y el más bajo a «video» (18,75 %), una diferencia menor al 5 %. En la tasa de interacción agregada, el valor más alto corresponde a «video» (72,56 %) y el más bajo a «photo» (58,27 %), es decir, 1,2 veces el del grupo más bajo.",
+    "hallazgos": [
+      "En la mediana de vistas, el valor más alto corresponde a «video» (42) y el más bajo a «photo» (39), es decir, 1,1 veces el del grupo más bajo.",
+      "En la tasa de interacción mediana, el valor más alto corresponde a «photo» (19,05 %) y el más bajo a «video» (18,75 %), una diferencia menor al 5 %."
+    ],
+    "limitacion": "Las diferencias entre tipos pueden deberse a otros factores (antigüedad, país, uso comercial); no demuestran que el formato cause el resultado."
+  },
+  "P3": {
+    "titulo": "Según el rango de duración",
+    "texto": "El grupo más numeroso es «0–15 s», con 79,68 % de las publicaciones y 94,95 % de las vistas. En la mediana de vistas, el valor más alto corresponde a «15–30 s» (55) y el más bajo a «0–15 s» (42), es decir, 1,3 veces el del grupo más bajo. En la tasa de interacción mediana, el valor más alto corresponde a «30–60 s» (26,19 %) y el más bajo a «0–15 s» (18,75 %), es decir, 1,4 veces el del grupo más bajo. En la tasa de interacción agregada, el valor más alto corresponde a «30–60 s» (81,32 %) y el más bajo a «15–30 s» (62,75 %), es decir, 1,3 veces el del grupo más bajo. Los grupos con menos de 100 registros (1–3 min, Más de 3 min, Video sin duración registrada) no se usan en las comparaciones. Las fotos y los videos sin duración registrada se muestran en la tabla pero no entran en la comparación de rangos.",
+    "hallazgos": [
+      "En la mediana de vistas, el valor más alto corresponde a «15–30 s» (55) y el más bajo a «0–15 s» (42), es decir, 1,3 veces el del grupo más bajo.",
+      "En la tasa de interacción mediana, el valor más alto corresponde a «30–60 s» (26,19 %) y el más bajo a «0–15 s» (18,75 %), es decir, 1,4 veces el del grupo más bajo."
+    ],
+    "limitacion": "La duración está redondeada al segundo en videos antiguos y los rangos son una decisión del equipo; la comparación es descriptiva."
+  },
+  "P4": {
+    "titulo": "Según el país",
+    "texto": "El grupo más numeroso es «SIN DATO», con 100,00 % de las publicaciones y 100,00 % de las vistas. No hay al menos dos grupos con 100 o más registros para comparar vistas o interacción entre grupos. El 100,00 % de las publicaciones no tiene país asignado (SIN DATO) y no puede compararse.",
+    "hallazgos": [
+      "No hay al menos dos grupos con 100 o más registros para comparar vistas o interacción entre grupos."
+    ],
+    "limitacion": "El país es una etiqueta asignada por TikTok, puede estar vacía y la muestra no es representativa de cada país."
+  },
+  "P5": {
+    "titulo": "Según el carácter comercial",
+    "texto": "El grupo más numeroso es «Sin señal comercial», con 100,00 % de las publicaciones y 100,00 % de las vistas. No hay al menos dos grupos con 100 o más registros para comparar vistas o interacción entre grupos. 0 publicaciones (0,00 %) tienen dos o más señales comerciales y se asignan a una sola categoría por prioridad; la tabla por indicador compara «Sí» y «No» para cada señal por separado.",
+    "hallazgos": [
+      "No hay al menos dos grupos con 100 o más registros para comparar vistas o interacción entre grupos."
+    ],
+    "limitacion": "Sin datos de inversión, costos ni conversiones no puede afirmarse qué formato comercial es más rentable; solo se describe alcance e interacción."
+  },
+  "P6": {
+    "titulo": "Según el año de publicación",
+    "texto": "El grupo más numeroso es «2016», con 100,00 % de las publicaciones y 100,00 % de las vistas. No hay al menos dos grupos con 100 o más registros para comparar vistas o interacción entre grupos. Periodo cubierto por la muestra: 2016 a 2016. Las publicaciones más antiguas llevan más tiempo en línea al medir las métricas; por eso se incluyen la edad mediana y las vistas por día.",
+    "hallazgos": [
+      "No hay al menos dos grupos con 100 o más registros para comparar vistas o interacción entre grupos."
+    ],
+    "limitacion": "Cada registro se midió en una fecha distinta y la muestra proviene de un archivo concreto; los años no son una serie temporal completa de TikTok."
+  }
+}

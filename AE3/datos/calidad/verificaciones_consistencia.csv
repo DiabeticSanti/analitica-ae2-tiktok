@@ -1,0 +1,43 @@
+verificacion,esperado,obtenido,resultado
+p1b_rango_vistas: suma de publicaciones,"200,000","200,000",OK
+p1b_rango_vistas: suma de % de publicaciones,100,100.000000,OK
+p1b_rango_vistas: suma de vistas,"354,188,785","354,188,785",OK
+p1b_rango_vistas: registros con tasa,"183,783","183,783",OK
+p2_tipo_publicacion: suma de publicaciones,"200,000","200,000",OK
+p2_tipo_publicacion: suma de % de publicaciones,100,100.000000,OK
+p2_tipo_publicacion: suma de vistas,"354,188,785","354,188,785",OK
+p2_tipo_publicacion: registros con tasa,"183,783","183,783",OK
+p3_rango_duracion: suma de publicaciones,"200,000","200,000",OK
+p3_rango_duracion: suma de % de publicaciones,100,100.000000,OK
+p3_rango_duracion: suma de vistas,"354,188,785","354,188,785",OK
+p3_rango_duracion: registros con tasa,"183,783","183,783",OK
+p4_pais: suma de publicaciones,"200,000","200,000",OK
+p4_pais: suma de % de publicaciones,100,100.000000,OK
+p4_pais: suma de vistas,"354,188,785","354,188,785",OK
+p4_pais: registros con tasa,"183,783","183,783",OK
+p4b_pais_completo: suma de publicaciones,"200,000","200,000",OK
+p4b_pais_completo: suma de % de publicaciones,100,100.000000,OK
+p4b_pais_completo: suma de vistas,"354,188,785","354,188,785",OK
+p4b_pais_completo: registros con tasa,"183,783","183,783",OK
+p5a_categoria_comercial: suma de publicaciones,"200,000","200,000",OK
+p5a_categoria_comercial: suma de % de publicaciones,100,100.000000,OK
+p5a_categoria_comercial: suma de vistas,"354,188,785","354,188,785",OK
+p5a_categoria_comercial: registros con tasa,"183,783","183,783",OK
+p6_anio_publicacion: suma de publicaciones,"200,000","200,000",OK
+p6_anio_publicacion: suma de % de publicaciones,100,100.000000,OK
+p6_anio_publicacion: suma de vistas,"354,188,785","354,188,785",OK
+p6_anio_publicacion: registros con tasa,"183,783","183,783",OK
+p5b (Contenido de marca (branded_content)): suma de publicaciones,"200,000","200,000",OK
+p5b (Contenido de marca (branded_content)): suma de % de publicaciones,100,100.000000,OK
+p5b (Contenido de marca (branded_content)): suma de vistas,"354,188,785","354,188,785",OK
+p5b (Contenido de marca (branded_content)): registros con tasa,"183,783","183,783",OK
+p5b (Publicidad (is_ad)): suma de publicaciones,"200,000","200,000",OK
+p5b (Publicidad (is_ad)): suma de % de publicaciones,100,100.000000,OK
+p5b (Publicidad (is_ad)): suma de vistas,"354,188,785","354,188,785",OK
+p5b (Publicidad (is_ad)): registros con tasa,"183,783","183,783",OK
+p5b (TikTok Shop (is_shop_video)): suma de publicaciones,"200,000","200,000",OK
+p5b (TikTok Shop (is_shop_video)): suma de % de publicaciones,100,100.000000,OK
+p5b (TikTok Shop (is_shop_video)): suma de vistas,"354,188,785","354,188,785",OK
+p5b (TikTok Shop (is_shop_video)): registros con tasa,"183,783","183,783",OK
+Registros finales = registros cargados - duplicados,"200,000","200,000",OK
+analisis_tasa incluido en analisis_vistas,True,True,OK

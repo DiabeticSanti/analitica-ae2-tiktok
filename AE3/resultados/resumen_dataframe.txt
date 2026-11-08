@@ -1,0 +1,94 @@
+RESUMEN DEL DATAFRAME
+============================================================
+Generado el: 2026-11-08 16:54:09
+
+0. ORIGEN
+- Origen: datasocial/tiktok-5.6B-videos (split: train) – AE3, DataFrame transformado y enriquecido
+- Enlace: https://huggingface.co/datasets/datasocial/tiktok-5.6B-videos
+- Licencia (según la ficha): CC BY-NC 4.0
+- Revisión (commit): a466d03349b4afa490ac8906c8b5d17f6006abc0
+- Fecha de consulta: 2026-11-08
+- Filas del dataset completo (ficha): 5,598,141,717
+- ¿Muestra?: Sí. Archivo 'data/2016-11.parquet' elegido al azar (semilla 42) entre 148 archivos parquet; 1 grupos de filas repartidos de 1; hasta 200,000 filas. No es una muestra aleatoria simple del dataset completo.
+- Registros que entran al análisis de vistas: 200,000
+- Registros que entran al análisis de tasa: 183,783
+- Transformación aplicada: corrección de tipos, normalización de categorías, marcado de calidad, 15 grupos de variables derivadas y selección de 34 columnas (ver datos/calidad/bitacora_transformaciones.csv)
+
+1. DIMENSIONES
+- Filas: 200000
+- Columnas: 34
+
+2. COLUMNAS, TIPOS Y VALORES NULOS
+Columna                  | Tipo                 | Nulos
+---------------------------------------------------------
+video_id                 | uint64               | 0
+posted_at                | datetime64[ms, UTC]  | 0
+anio_publicacion         | Int64                | 0
+edad_dias                | Int64                | 0
+type                     | string               | 0
+duration_ms              | Int64                | 0
+country                  | string               | 0
+is_ad                    | boolean              | 0
+is_shop_video            | boolean              | 0
+branded_content          | string               | 0
+views                    | Int64                | 0
+likes                    | Int64                | 0
+comments                 | Int64                | 0
+shares                   | Int64                | 0
+saves                    | Int64                | 0
+engagement_rate          | float64              | 1574
+duracion_s               | float64              | 39551
+rango_duracion           | object               | 0
+rango_vistas             | object               | 0
+interacciones_totales    | Int64                | 0
+tasa_interaccion         | float64              | 1574
+tasa_imputada            | bool                 | 0
+categoria_comercial      | object               | 0
+n_senales_comerciales    | int64                | 0
+n_hashtags               | int64                | 0
+vistas_por_dia           | float64              | 0
+pais_agrupado            | object               | 0
+f_fecha_incoherente      | bool                 | 0
+f_sin_vistas             | bool                 | 0
+f_likes_mayor_vistas     | bool                 | 0
+f_duracion_inconsistente | bool                 | 0
+f_tipo_no_reconocido     | bool                 | 0
+analisis_vistas          | bool                 | 0
+analisis_tasa            | bool                 | 0
+
+Total de valores nulos: 42699
+- Hay valores nulos.
+
+3. VALORES VACÍOS (cadena vacía o lista vacía; pandas no los cuenta como nulos)
+- No se encontraron.
+
+4. ESTADÍSTICAS DESCRIPTIVAS (columnas numéricas)
+                        video_id  anio_publicacion  edad_dias  duration_ms         views        likes   comments     shares      saves  engagement_rate  duracion_s  interacciones_totales  tasa_interaccion  n_senales_comerciales  n_hashtags  vistas_por_dia
+count                 200,000.00        200,000.00 200,000.00   200,000.00    200,000.00   200,000.00 200,000.00 200,000.00 200,000.00       198,426.00  160,449.00             200,000.00        198,426.00             200,000.00  200,000.00      200,000.00
+mean  160,731,755,220,161,344.00          2,016.00   3,503.97     9,576.78      1,770.94     1,475.72       4.00       0.71       0.80             0.51       11.92               1,481.22              0.51                   0.00        0.64            0.52
+std     1,556,980,798,875,561.25              0.00      56.04     6,096.46     44,676.90    23,631.77     175.50      27.49      40.21             1.67        4.28              23,702.14              1.67                   0.00        1.51           12.80
+min   157,771,620,990,803,968.00          2,016.00   3,324.00         0.00          0.00         0.00       0.00       0.00       0.00             0.00        1.00                   0.00              0.00                   0.00        0.00            0.00
+25%   159,482,388,219,177,984.00          2,016.00   3,503.00     5,000.00         20.00         4.00       0.00       0.00       0.00             0.11        9.00                   4.00              0.11                   0.00        0.00            0.01
+50%   160,689,825,723,981,824.00          2,016.00   3,508.00    12,000.00         41.00         9.00       0.00       0.00       0.00             0.21       14.00                   9.00              0.21                   0.00        0.00            0.01
+75%   162,081,783,253,008,384.00          2,016.00   3,513.00    15,000.00         87.00        17.00       0.00       0.00       0.00             0.42       15.00                  18.00              0.42                   0.00        0.00            0.02
+max   163,546,632,188,293,120.00          2,016.00   3,619.00   329,000.00 14,443,134.00 1,917,339.00  71,261.00   9,419.00  13,650.00           188.00      329.00           1,926,910.00            188.00                   0.00       17.00        3,998.65
+
+5. COLUMNAS NO NUMÉRICAS (valores distintos y más frecuente)
+- posted_at: fecha mínima 2016-11-01 00:00:01+00:00 | fecha máxima 2016-11-16 22:27:51+00:00
+- type: 2 distintos; más frecuente: video (160456)
+- country: 1 distintos; más frecuente: SIN DATO (200000)
+- is_ad: 1 distintos; más frecuente: False (200000)
+- is_shop_video: 1 distintos; más frecuente: False (200000)
+- branded_content: 1 distintos; más frecuente: ninguno (200000)
+- rango_duracion: 7 distintos; más frecuente: 0–15 s (159365)
+- rango_vistas: 5 distintos; más frecuente: Menos de 1 mil (194840)
+- tasa_imputada: 1 distintos; más frecuente: False (200000)
+- categoria_comercial: 1 distintos; más frecuente: Sin señal comercial (200000)
+- pais_agrupado: 1 distintos; más frecuente: SIN DATO (200000)
+- f_fecha_incoherente: 1 distintos; más frecuente: False (200000)
+- f_sin_vistas: 2 distintos; más frecuente: False (198426)
+- f_likes_mayor_vistas: 2 distintos; más frecuente: False (185357)
+- f_duracion_inconsistente: 2 distintos; más frecuente: False (199790)
+- f_tipo_no_reconocido: 1 distintos; más frecuente: False (200000)
+- analisis_vistas: 1 distintos; más frecuente: True (200000)
+- analisis_tasa: 2 distintos; más frecuente: True (183783)

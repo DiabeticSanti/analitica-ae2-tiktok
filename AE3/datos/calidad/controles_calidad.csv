@@ -1,0 +1,9 @@
+control,criterio,registros_detectados,porcentaje,tratamiento
+Fechas incoherentes,"posted_at nulo, stats_updated_at nulo o publicación posterior a la medición",0,0.0,Se excluye de todos los cálculos (no se puede confiar en la cronología)
+Vistas nulas,views sin valor,0,0.0,Se excluye de todos los cálculos
+Publicaciones sin vistas,views = 0 (la tasa de interacción no está definida),1574,0.787,Se conserva para vistas; se excluye de los cálculos de tasa
+Me gusta mayores que vistas,likes > views con views > 0,14643,7.3215,Se conserva para vistas; se excluye de los cálculos de tasa
+Duración inconsistente,foto con duración > 0 o video con duración = 0,210,0.105,Se conserva; los videos sin duración van a una categoría propia en P3
+Tipo no reconocido,type distinto de video o photo,0,0.0,Se conserva y se informa
+Indicadores sin dato,is_ad o is_shop_video nulos (TikTok no los indicó),0,0.0,Se tratan como 'no' al clasificar; se informa su cantidad
+Duplicados por video_id,video_id repetido,0,0.0,Detectados antes de limpiar: 0; ninguno que tratar

@@ -1,0 +1,4 @@
+indicador,grupo,n_publicaciones,pct_publicaciones,vistas_total,pct_vistas,vistas_media,vistas_mediana,vistas_p25,vistas_p75,n_con_tasa,tasa_mediana_pct,tasa_agregada_pct
+Publicidad (is_ad),No,200000,100.0,354188785,100.0,1770.943925,41.0,20.0,87.0,183783,18.867900000000002,71.957495494103
+TikTok Shop (is_shop_video),No,200000,100.0,354188785,100.0,1770.943925,41.0,20.0,87.0,183783,18.867900000000002,71.957495494103
+Contenido de marca (branded_content),No,200000,100.0,354188785,100.0,1770.943925,41.0,20.0,87.0,183783,18.867900000000002,71.957495494103

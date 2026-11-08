@@ -1,0 +1,8 @@
+indicador,antes,despues
+Filas,200000,200000
+Columnas,27,34
+Columnas numéricas,20,16
+Columnas de fecha,2,1
+Columnas booleanas,0,10
+Columnas de texto / lista,5,7
+Valores nulos (total),220857,42699

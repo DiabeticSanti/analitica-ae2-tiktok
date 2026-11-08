@@ -1,0 +1,16 @@
+variable,regla,significado,utilidad
+anio_publicacion,año de posted_at (UTC),Año en que se publicó,P6: comparar por periodo
+duracion_s,"duration_ms / 1000, solo videos con duración > 0; vacío en otros casos",Duración en segundos,P3: base para los rangos de duración
+rango_duracion,"cortes (0,15], (15,30], (30,60], (60,180], >180 s; fotos y videos sin duración en categorías propias",Rango de duración del video,P3: comparar por duración
+rango_vistas,"cortes [0,1 mil), [1 mil,10 mil), [10 mil,100 mil), [100 mil,1 millón), ≥1 millón vistas",Rango de alcance de la publicación,P1: distribución del alcance; gráficas de AE4
+interacciones_totales,likes + comments + shares + saves,Total de interacciones,Numerador de la tasa de interacción
+tasa_interaccion_calc,"interacciones_totales / views, solo si views > 0",Tasa recalculada con la fórmula de la ficha,Variable intermedia: valida engagement_rate y completa faltantes (no se exporta)
+tasa_interaccion,"engagement_rate; si es nulo, tasa_interaccion_calc",Tasa de interacción usada en el análisis (proporción 0–1),P1–P6: métrica principal de interacción
+tasa_imputada,True si engagement_rate era nulo y se completó con la fórmula,Marca de tasa completada,Trazabilidad del criterio de imputación
+n_senales_comerciales,is_ad + is_shop_video + (branded_content ≠ ninguno),Cuántas señales comerciales tiene,Medir solapamientos entre categorías
+categoria_comercial,prioridad: is_ad > is_shop_video > branded_content > ninguna,Categoría comercial excluyente,P5: comparar por carácter comercial
+n_hashtags,cantidad de elementos de la lista hashtags,Número de hashtags,Describir el uso de etiquetas; reemplaza a la lista (no exportable a CSV)
+edad_dias,días entre posted_at y stats_updated_at,Tiempo en línea al medir las métricas,P6: controlar el efecto de la antigüedad
+vistas_por_dia,"views / max(edad_dias, 1)",Vistas promedio por día en línea,P6: comparar publicaciones de distinta antigüedad
+pais_agrupado,los 10 países con más publicaciones; resto = 'Otros países'; vacío = 'SIN DATO',País agrupado para comparar,P4: comparar países con base suficiente
+analisis_vistas / analisis_tasa,"ver sección 4.4: sin fechas incoherentes ni vistas nulas; para la tasa, además views > 0, likes ≤ views y tasa disponible",Indicadores de inclusión en los cálculos,Garantizan que cada tabla use los mismos registros

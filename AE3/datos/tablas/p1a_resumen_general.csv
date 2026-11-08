@@ -1,0 +1,7 @@
+variable,unidad,n,media,mediana,p25,p75,p95,maximo
+views,vistas,200000,1770.943925,41.0,20.0,87.0,375.0,14443134.0
+interacciones_totales,interacciones,200000,1481.21837,9.0,4.0,18.0,82.0,1926910.0
+tasa_interaccion,%,183783,26.32691653362934,18.867900000000002,10.0,35.0,78.7879,1228.5714
+duracion_s,segundos (solo videos),160449,11.921400139608226,14.0,9.0,15.0,15.0,329.0
+vistas_por_dia,vistas por día,200000,0.52280525,0.01,0.01,0.02,0.11,3998.65
+n_hashtags,hashtags,200000,0.63736,0.0,0.0,0.0,4.0,17.0

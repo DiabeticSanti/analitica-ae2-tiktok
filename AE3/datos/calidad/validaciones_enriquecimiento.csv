@@ -1,0 +1,8 @@
+verificacion,detalle,resultado
+engagement_rate vs fórmula,"198,426 registros comparables; 0 con diferencia > 0.001 (máx. 0.000003)",OK
+Tasas imputadas,0 registros con engagement_rate nulo completados con la fórmula,OK
+Categorías comerciales,0 registros con 2 o más señales (se asignan por prioridad),OK
+Rango de duración completo,todo registro tiene rango_duracion,OK
+Rango de vistas completo,todo registro tiene rango_vistas,OK
+Interacciones no negativas,interacciones_totales >= 0,OK
+Países agrupados,la suma de grupos de pais_agrupado cubre todos los registros,OK

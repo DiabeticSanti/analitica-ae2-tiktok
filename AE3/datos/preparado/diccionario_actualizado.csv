@@ -1,0 +1,35 @@
+variable,origen,significado,tipo,unidad_o_regla
+video_id,Original,Identificador de la publicación (clave del registro),uint64,Sin unidad
+posted_at,Original,Fecha y hora de publicación,"datetime64[ms, UTC]",UTC
+anio_publicacion,Derivada,Año de publicación,Int64,Año
+edad_dias,Derivada,Días entre la publicación y la medición de métricas (stats_updated_at); vacío si la fecha es incoherente,Int64,Días
+type,Original,Tipo de publicación: video o photo (normalizado),string,—
+duration_ms,Original,Duración de la publicación; 0 en fotos según la ficha,Int64,Milisegundos
+country,Original,Región asignada por TikTok; vacío reemplazado por 'SIN DATO',string,Código de país
+is_ad,Original,Indica publicidad (Spark Ads); nulo = TikTok no lo indicó,boolean,Booleano
+is_shop_video,Original,Indica video de TikTok Shop; nulo = no indicado,boolean,Booleano
+branded_content,Original,"Contenido de marca (paid_partnership, shop_affiliate); vacío reemplazado por 'ninguno'",string,—
+views,Original,Vistas al momento de stats_updated_at,Int64,Vistas
+likes,Original,Me gusta al momento de stats_updated_at,Int64,Conteo
+comments,Original,Comentarios al momento de stats_updated_at,Int64,Conteo
+shares,Original,Compartidos al momento de stats_updated_at,Int64,Conteo
+saves,Original,Guardados al momento de stats_updated_at,Int64,Conteo
+engagement_rate,Original,Tasa de interacción publicada: (likes+comments+shares+saves)/views,float64,Proporción (0–1)
+duracion_s,Derivada,Duración en segundos (solo videos con duración > 0),float64,Segundos
+rango_duracion,Derivada,Rango de duración del video; categorías propias para fotos y videos sin duración,object,Rango
+rango_vistas,Derivada,Rango de alcance según vistas,object,Rango
+interacciones_totales,Derivada,likes + comments + shares + saves,Int64,Conteo
+tasa_interaccion,Derivada,"engagement_rate; si es nulo, tasa recalculada",float64,Proporción (0–1)
+tasa_imputada,Derivada,True si la tasa se completó con la fórmula,bool,Booleano (0/1 en el CSV)
+categoria_comercial,Derivada,Categoría comercial excluyente (publicidad > Shop > contenido de marca > ninguna),object,Categoría
+n_senales_comerciales,Derivada,Cantidad de señales comerciales presentes (0–3),int64,Conteo
+n_hashtags,Derivada,Cantidad de hashtags de la publicación,int64,Conteo
+vistas_por_dia,Derivada,"views / max(edad_dias, 1)",float64,Vistas por día
+pais_agrupado,Derivada,Países con más publicaciones; 'Otros países'; 'SIN DATO',object,Categoría
+f_fecha_incoherente,Marca de calidad,Fecha nula o publicación posterior a la medición,bool,Booleano (0/1 en el CSV)
+f_sin_vistas,Marca de calidad,views = 0,bool,Booleano (0/1 en el CSV)
+f_likes_mayor_vistas,Marca de calidad,likes > views con views > 0,bool,Booleano (0/1 en el CSV)
+f_duracion_inconsistente,Marca de calidad,Foto con duración > 0 o video sin duración,bool,Booleano (0/1 en el CSV)
+f_tipo_no_reconocido,Marca de calidad,type distinto de video o photo,bool,Booleano (0/1 en el CSV)
+analisis_vistas,Marca de calidad,True si el registro entra en los cálculos de vistas,bool,Booleano (0/1 en el CSV)
+analisis_tasa,Marca de calidad,True si el registro entra en los cálculos de tasa de interacción,bool,Booleano (0/1 en el CSV)
